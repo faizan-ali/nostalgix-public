@@ -1,0 +1,53 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 180
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "files": {
+    "ignore": [
+      "**/*/node_modules/**",
+      "**/*/dist/**",
+      "**/*/build/**",
+      "**/*/out/**",
+      "**/*/coverage/**",
+      "**/*/.next/**",
+      "**/*/.vercel/**",
+      "**/*/.serverless/**",
+      ".idea/*",
+      "**/*/pnpm-lock.yaml",
+      "**/*/package-lock.json",
+      "**/*/tsconfig.tsbuildinfo"
+    ]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noConfusingVoidType": "off",
+        "noArrayIndexKey": "off"
+      },
+      "style": {
+        "noUselessElse": "off",
+        "noNonNullAssertion": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "none",
+      "jsxQuoteStyle": "single"
+    }
+  }
+}
